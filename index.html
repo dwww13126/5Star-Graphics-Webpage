@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5Star Graphics Waikato</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <div id="logo-slogan" class="slide-in">
+      <img src="./Assets/SVG/Logo(Small).png" class="logo" id="header-logo-small" alt="logo">
+      <img src="./Assets/SVG/Logo.png" class="logo" id="header-logo" alt="logo">
+      <a class="slogan slide-in-move">Quality Sign & Print</a>
+    </div>
+    <ul class="navigation">
+      <li><a class="nonactive services site-nav" href="#services">Services&nbsp;</a></li>
+      <li><a class="nonactive about site-nav" href="#about">About&nbsp;</a></li>
+      <li><a class="nonactive contact site-nav" href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <div class="segment" id="services"></div>
+    <div class="text-box"><h3>Our Services:</h3></div>
+  <div class="container">
+    <div id="services-grid">
+      <div id="Signs" class="service-type-selected">
+        <p>Signs:</p>
+      </div>
+      <div id="Vehicles" class="service-type">
+        <p>Vehicles:</p>
+      </div>
+      <div id="Design" class="service-type">
+        <p>Design:</p>
+      </div>
+      <div id="Print" class="service-type">
+        <p>Print:</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="image-carousel">
+      <div class="image-navigation" id="next-photo">
+        <img class="nav-arrow" src="./Assets/SVG/Arrow.svg" alt="<">
+      </div>
+      <div class="image-navigation" id="prevous-photo">
+        <img class="nav-arrow" src="./Assets/SVG/Arrow.svg" alt=">">
+      </div>
+      <div id="image-carousel-slides" class="slide8-1">
+        <div id="slide-1" class="image-div current-slide">
+          <img src="./Assets/Slideshow/Signs/0.jpg" class="service-image" alt="example-1">
+        </div>
+        <div id="slide-2" class="image-div">
+          <img src="./Assets/Slideshow/Signs/1.jpg" class="service-image" alt="example-2">
+        </div>
+        <div id="slide-3" class="image-div">
+          <img src="./Assets/Slideshow/Signs/2.jpg" class="service-image" alt="example-3">
+        </div>
+        <div id="slide-4" class="image-div">
+          <img src="./Assets/Slideshow/Signs/3.jpg" class="service-image" alt="example-4">
+        </div>
+        <div id="slide-5" class="image-div">
+          <img src="./Assets/Slideshow/Signs/4.jpg" class="service-image" alt="example-5">
+        </div>
+        <div id="slide-6" class="image-div">
+          <img src="./Assets/Slideshow/Signs/5.jpg" class="service-image" alt="example-6">
+        </div>
+        <div id="slide-7" class="image-div">
+          <img src="./Assets/Slideshow/Signs/6.jpg" class="service-image" alt="example-7">
+        </div>
+        <div id="slide-8" class="image-div">
+          <img src="./Assets/Slideshow/Signs/7.jpg" class="service-image" alt="example-8">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="segment" id="about"></div>
+  <div class="text-box">
+      <h3>About Us:</h3>
+      <div class="gear"><p>5Star Graphics utilizes a Roland TrueVIS solvent printer/cutter
+        to print eye-popping colours using long lasting inks. The machine can print on
+        a variety of different media so we can find creative solutions to your print media
+        needs.</p></div>
+        <video id="printer-demo" autoplay loop muted>
+          <source src="./Assets/Video/Printer_demo.mp4" type="video/mp4">
+        </video>
+      <div class="text-box"><p>Get in touch with your next print project for
+        personal service and quality results at a realistic price!</p></div>
+  </div>
+  <div class="segment" id="contact"></div>
+  <div class="container">
+    <div class="text-box">
+      <div class="contact"><p>Contact Us:</p></div>
+      <div class="phone"><p><img class="icon" src="./Assets/SVG/Phone.svg" alt="Phone">&nbsp;022 423 6902</p></div>
+      <div class="email"><p><img class="icon" src="./Assets/SVG/Email.svg" alt="Email">&nbsp;5Stargraphicsnz@gmail.com</p></div>
+    </div>
+  </div>
+  <div id="end"></div>
+  <script  src="./script.js"></script>
+</body>
+</html>
