@@ -9,6 +9,10 @@ document.getElementById("Signs").addEventListener("click", function(){showCatego
 document.getElementById("Vehicles").addEventListener("click", function(){showCategory("Vehicles")});
 document.getElementById("Design").addEventListener("click", function(){showCategory("Design")});
 document.getElementById("Print").addEventListener("click", function(){showCategory("Print")});
+//Sets up listners for each of the different category buttons
+document.getElementById("prevous-photo").addEventListener("click", function(){moveNext(-1)});
+document.getElementById("next-photo").addEventListener("click", function(){moveNext(+1)});
+
 //Checks the users position on the page every time a scroll event occurs
 window.onscroll = () => {
     //Goes through and checks each of the segments present on the webpage
@@ -72,10 +76,6 @@ function showCategory(id) {
     index++;
   });
 }
-
-//Sets up listners for each of the different category buttons
-document.getElementById("prevous-photo").addEventListener("click", function(){moveNext(-1)});
-document.getElementById("next-photo").addEventListener("click", function(){moveNext(+1)});
 
 
 function moveNext(direction) {

@@ -123,11 +123,12 @@ th, td {
 
 #swipe-photo {
   position: absolute;
-  opacity: 0;
   top: 30%;
   bottom: 30%;
   right: 30%;
   left: 30%;
+  height: 0px;
+  width: 0px;
   -webkit-animation: moveAndFade 2s;
 }
 
@@ -181,7 +182,7 @@ th, td {
   }
 }
 
-@media (max-width: 428px) {
+@media (max-width: 440px) {
 
   .slogan, #header-logo {
     display: none;
@@ -306,6 +307,10 @@ th, td {
   margin-left: 0px;
 }
 
+.spacer {
+  height: 80vh;
+}
+
 .slide-in-move {
   -webkit-animation: slideInMove 2s;
   margin-left: 10px;
@@ -319,7 +324,9 @@ th, td {
 @-webkit-keyframes moveAndFade {
   0% {opacity: 1;
       right: 30%;
-      left: 30%;}
+      left: 30%;
+      height: auto;
+      width: auto;}
   25% {opacity: 1;
       right: 15%;
       left: 45%;}
@@ -328,10 +335,14 @@ th, td {
        left: 15%;}
   75% {opacity: 1;
        right: 30%;
-       left: 30%;}
+       left: 30%;
+       height: auto;
+       width: auto;}
   100% {opacity: 0;
         right: 30%;
-        left: 30%;}
+        left: 30%;
+        height: 0px;
+        width: 0px;}
 }
 
 @-webkit-keyframes slideIn {
