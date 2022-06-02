@@ -121,6 +121,16 @@ th, td {
   -webkit-animation: fadeIn 2s;
 }
 
+#swipe-photo {
+  position: absolute;
+  opacity: 0;
+  top: 30%;
+  bottom: 30%;
+  right: 30%;
+  left: 30%;
+  -webkit-animation: moveAndFade 2s;
+}
+
 
 #services-grid {
   display: grid;
@@ -306,6 +316,24 @@ th, td {
   100% {opacity: 1;}
 }
 
+@-webkit-keyframes moveAndFade {
+  0% {opacity: 1;
+      right: 30%;
+      left: 30%;}
+  25% {opacity: 1;
+      right: 15%;
+      left: 45%;}
+  50% {opacity: 1;
+       right: 45%;
+       left: 15%;}
+  75% {opacity: 1;
+       right: 30%;
+       left: 30%;}
+  100% {opacity: 0;
+        right: 30%;
+        left: 30%;}
+}
+
 @-webkit-keyframes slideIn {
   0% {margin-left: -220px;}
   100% {margin-left: 0px;}
@@ -392,6 +420,11 @@ th, td {
   height: 100%;
 }
 
+.swipe-icon {
+  width: 100%;
+  height: 100%;
+}
+
 @media (min-width: 1024px) {
 
   .image-carousel {
@@ -430,6 +463,10 @@ th, td {
 
   #next-photo > img {
     transform: rotate(180deg);
+  }
+
+  #swipe-photo {
+    display: none;
   }
 
   .image-div {
