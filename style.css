@@ -385,3 +385,258 @@ th, td {
   width: 100%;
   height: 100%;
 }
+
+@media (min-width: 1024px) {
+
+  #image-carousel {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vh;
+    padding-top: 10px;
+  }
+
+  #header-logo {
+    height: 50px;
+    margin-right: 8px;
+    display: block;
+  }
+
+  #header-logo-small {
+    height: 30px;
+    margin-right: 8px;
+    display: none;
+  }
+
+  #image-carousel-slides {
+    width: 1100vh;
+  }
+
+  .rotate {
+    -webkit-animation: slide 20s infinite;
+  }
+
+
+  #prevous-photo {
+    position: absolute;
+    top: 40vh;
+    left: 0;
+  }
+
+  #next-photo {
+    position: absolute;
+    top: 40vh;
+    right: 0;
+  }
+
+  #next-photo > img {
+    transform: rotate(180deg);
+  }
+
+  .image-div {
+    float: left;
+    height: 90vh;
+    width: 90vh;
+    margin-right: 10vh;
+  }
+
+  .image-navigation {
+    width: 5vh;
+    height: 5vh;
+    min-width: 40px;
+    min-height: 40px;
+    opacity: 1;
+    display: block;
+  }
+
+  /* Allows the slideshow animation to operate through JS*/
+
+  @-webkit-keyframes slide1-2 {
+    0% {margin-left: 0vh;}
+    100% {margin-left: -100vh;}
+  }
+
+  @-webkit-keyframes slide2-1 {
+    0% {margin-left: -100vh;}
+    100% {margin-left: 0vh;}
+  }
+
+  @-webkit-keyframes slide2-3 {
+    0% {margin-left: -100vh;}
+    100% {margin-left: -200vh;}
+  }
+
+  @-webkit-keyframes slide3-2 {
+    0% {margin-left: -200vh;}
+    100% {margin-left: -100vh;}
+  }
+
+  @-webkit-keyframes slide3-4 {
+    0% {margin-left: -200vh;}
+    100% {margin-left: -300vh;}
+  }
+
+  @-webkit-keyframes slide4-3 {
+    0% {margin-left: -300vh;}
+    100% {margin-left: -200vh;}
+  }
+
+  @-webkit-keyframes slide3-4 {
+    0% {margin-left: -200vh;}
+    100% {margin-left: -300vh;}
+  }
+
+  @-webkit-keyframes slide4-3 {
+    0% {margin-left: -300vh;}
+    100% {margin-left: -200vh;}
+  }
+
+  @-webkit-keyframes slide4-5 {
+    0% {margin-left: -300vh;}
+    100% {margin-left: -400vh;}
+  }
+
+  @-webkit-keyframes slide5-4 {
+    0% {margin-left: -400vh;}
+    100% {margin-left: -300vh;}
+  }
+
+  @-webkit-keyframes slide5-6 {
+    0% {margin-left: -400vh;}
+    100% {margin-left: -500vh;}
+  }
+
+  @-webkit-keyframes slide6-5 {
+    0% {margin-left: -500vh;}
+    100% {margin-left: -400vh;}
+  }
+
+  @-webkit-keyframes slide6-7 {
+    0% {margin-left: -500vh;}
+    100% {margin-left: -600vh;}
+  }
+
+  @-webkit-keyframes slide7-6 {
+    0% {margin-left: -600vh;}
+    100% {margin-left: -500vh;}
+  }
+
+  @-webkit-keyframes slide7-8 {
+    0% {margin-left: -600vh;}
+    100% {margin-left: -700vh;}
+  }
+
+  @-webkit-keyframes slide8-7 {
+    0% {margin-left: -700vh;}
+    100% {margin-left: -600vh;}
+  }
+
+  @-webkit-keyframes slide8-1 {
+    0% {margin-left: -700vh;}
+    100% {margin-left: 0vh;}
+  }
+
+  @-webkit-keyframes slide1-8 {
+    0% {margin-left: 0vh;}
+    100% {margin-left: -700vh;}
+  }
+
+  .slide-1-2 {
+    -webkit-animation: slide1-2 2s;
+    margin-left: -100vh;
+  }
+
+  .slide-1-8 {
+    -webkit-animation: slide1-8 2s;
+    margin-left: -700vh;
+  }
+
+  .slide-2-1 {
+    -webkit-animation: slide2-1 2s;
+    margin-left: 0vh;
+  }
+
+  .slide-2-3 {
+    -webkit-animation: slide2-3 2s;
+    margin-left: -200vh;
+  }
+
+  .slide-3-2 {
+    -webkit-animation: slide3-2 2s;
+    margin-left: -100vh;
+  }
+
+  .slide-3-4 {
+    -webkit-animation: slide3-4 2s;
+    margin-left: -300vh;
+  }
+
+  .slide-4-3 {
+    -webkit-animation: slide4-3 2s;
+    margin-left: -200vh;
+  }
+
+  .slide-4-5 {
+    -webkit-animation: slide4-5 2s;
+    margin-left: -400vh;
+  }
+
+  .slide-5-4 {
+    -webkit-animation: slide5-4 2s;
+    margin-left: -300vh;
+  }
+
+  .slide-5-6 {
+    -webkit-animation: slide5-6 2s;
+    margin-left: -500vh;
+  }
+
+  .slide-6-5 {
+    -webkit-animation: slide6-5 2s;
+    margin-left: -400vh;
+  }
+
+  .slide-6-7 {
+    -webkit-animation: slide6-7 2s;
+    margin-left: -600vh;
+  }
+
+  .slide-7-6 {
+    -webkit-animation: slide7-6 2s;
+    margin-left: -500vh;
+  }
+
+  .slide-7-8 {
+    -webkit-animation: slide7-8 2s;
+    margin-left: -700vh;
+  }
+
+  .slide-8-7 {
+    -webkit-animation: slide8-7 2s;
+    margin-left: -600vh;
+  }
+
+  .slide-8-1 {
+    -webkit-animation: slide8-1 2s;
+    margin-left: -0vh;
+  }
+
+  @-webkit-keyframes slide {
+    0% {margin-left: 0vh;}
+    6.25% {margin-left: -100vh;}
+    12.5% {margin-left: -100vh;}
+    18.75% {margin-left: -200vh;}
+    25% {margin-left: -200vh;}
+    31.25% {margin-left: -300vh;}
+    37.5% {margin-left: -300vh;}
+    43.75% {margin-left: -400vh;}
+    50% {margin-left: -400vh;}
+    56.25% {margin-left: -500vh;}
+    62.5% {margin-left: -500vh;}
+    68.75% {margin-left: -600vh;}
+    75% {margin-left: -600vh;}
+    81.25% {margin-left: -700vh;}
+    87.5% {margin-left: -700vh;}
+    95% {margin-left: 0vh;}
+    100% {margin-left: 0vh;}
+  }
+}

@@ -60,7 +60,6 @@ function showCategory(id) {
   }
   //Alters the src of all the service-images
   let serviceImages = document.getElementsByClassName("service-image");
-  console.log(serviceImages);
   let index = 0;
   Array.from(serviceImages).forEach((im) => {
     //Works out the modulo to loop back and repeat the 1st 3 images
@@ -72,4 +71,23 @@ function showCategory(id) {
     //Increments index to move onto the next image
     index++;
   });
+}
+
+//Sets up listners for each of the different category buttons
+document.getElementById("prevous-photo").addEventListener("click", function(){moveNext(-1)});
+document.getElementById("next-photo").addEventListener("click", function(){moveNext(+1)});
+
+
+function moveNext(direction) {
+  //Finds which slide is currently being viewed
+  let currentSlide = document.getElementsByClassName("current-slide")[0];
+  //Calculates tthe nextId (Based on the direction passed in) from currentSlide
+  //Through working out the modulo 8 of the currentSlide index and adding 1
+  let index = Array.from(currentSlide.parentElement.children).indexOf(currentSlide);
+  let next = (((index + direction) % 8) + 8) % 8;
+  //Removes the "current-slide" classname and applies it to the next slide button
+  let animationClass = currentSlide.id + "-" + (next + 1);
+  currentSlide.className = "image-div";
+  currentSlide.parentElement.children[next].className = "image-div current-slide";
+  document.getElementById("image-carousel-slides").className = animationClass;
 }
