@@ -51,6 +51,11 @@ th, td {
   display: none;
 }
 
+#company-logo {
+  width: 100%;
+  border-radius: 5px;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -201,6 +206,21 @@ th, td {
   }
 }
 
+@media (max-width: 320px) {
+
+  .slogan, #header-logo, #header-logo-small {
+    display: none;
+  }
+
+  .site-nav {
+    font-size: 16px;
+  }
+
+  .text-box, .service-type, .service-type-selected {
+    font-size: 10px;
+  }
+}
+
 .info-grid > div {
   padding: 0pt 0pt 0pt 8pt;
 }
@@ -255,13 +275,6 @@ th, td {
   display: flex;
   align-items: center;
   padding: 8px;
-}
-
-#image-carousel {
-  overflow: hidden;
-  height: 100vw;
-  width: 100vw;
-  padding-top: 10px;
 }
 
 #carousel-controller {
@@ -374,7 +387,6 @@ th, td {
 
 .image-carousel {
   width: 100vw;
-  height: 100vw;
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
@@ -443,16 +455,8 @@ th, td {
     height: 95vh;
   }
 
-  #image-carousel {
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    padding-top: 10px;
-  }
-
   #image-carousel-slides {
     width: 1100vh;
-
   }
 
   .rotate {
